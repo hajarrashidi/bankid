@@ -1,0 +1,29 @@
+{
+  "name": "hajarrashidi/bankid",
+  "type": "library",
+  "version": "1.0.0",
+  "autoload": {
+    "psr-4": {
+      "BankID\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Hajar Rashidi",
+      "email": "hajarrashidi@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "security": "hajarrashidi@gmail.com"
+  },
+  "funding": [
+    {
+      "type": "patreon",
+      "url": "https://patreon.com/hajarrashidi"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^7.1"
+  }
+}
