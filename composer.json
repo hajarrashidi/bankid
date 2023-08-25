@@ -1,5 +1,6 @@
 {
   "name": "hajarrashidi/bankid",
+  "description": "Library for BankID",
   "type": "library",
   "version": "1.0.0",
   "autoload": {
@@ -24,6 +25,13 @@
     }
   ],
   "require": {
+    "php": ">=7.2.0 | 8.*",
     "guzzlehttp/guzzle": "^7.1"
-  }
+  },
+  "keywords": [
+    "hajarrashidi",
+    "bankid",
+    "bank-id",
+    "v6"
+  ]
 }
