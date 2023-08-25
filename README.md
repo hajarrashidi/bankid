@@ -2,7 +2,7 @@
 
 ## Description:
 
-PHP Composer package for BankID
+PHP Composer package for BankID, supports v6.0 with QR and App link support. 
 
 ## [Web service API:](https://www.bankid.com/utvecklare/guider/teknisk-integrationsguide/webbservice-api)
 
