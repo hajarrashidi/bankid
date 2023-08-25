@@ -1,5 +1,11 @@
 # BankID
 
+### Packagist.org
+https://packagist.org/packages/hajarrashidi/bankid
+```bash
+composer require guzzlehttp/guzzle
+```
+
 ## Description:
 
 PHP Composer package for BankID, supports v6.0 with QR and App link support. 
