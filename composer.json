@@ -2,7 +2,7 @@
   "name": "hajarrashidi/bankid",
   "description": "Library for BankID",
   "type": "library",
-  "version": "1.0.0",
+  "version": "6.0.0-stable",
   "autoload": {
     "psr-4": {
       "BankID\\": "src/"
