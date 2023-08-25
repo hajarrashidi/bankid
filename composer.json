@@ -1,8 +1,8 @@
 {
   "name": "hajarrashidi/bankid",
+  "license": "Apache-2.0",
   "description": "Library for BankID",
   "type": "library",
-  "version": "6.0.0-stable",
   "autoload": {
     "psr-4": {
       "BankID\\": "src/"
