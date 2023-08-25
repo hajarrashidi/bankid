@@ -3,7 +3,7 @@
 ### Packagist.org
 https://packagist.org/packages/hajarrashidi/bankid
 ```bash
-composer require guzzlehttp/guzzle
+composer require hajarrashidi/bankid
 ```
 
 ## Description:
