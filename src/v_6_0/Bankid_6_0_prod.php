@@ -6,12 +6,13 @@
 
 namespace BankID\v_6_0;
 
+use BankID\Models\Response;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 
 class Bankid_6_0_prod
 {
-    private Client $guzzleClient;
+    private $guzzleClient;
     private const API_BASE_URL = 'https://appapi2.bankid.com/rp/v6.0/';
 
     public function __construct(array $guzzleOptions = [])
@@ -49,7 +50,7 @@ class Bankid_6_0_prod
             return new ErrorResponse($e->getResponse());
         }
 
-        return $response;
+        return new Response($response);
     }
 
     public function getQrCode(string $qrStartToken, int $elapsedTime, string $qrStartSecret): string

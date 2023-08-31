@@ -12,7 +12,7 @@ use GuzzleHttp\Exception\ClientException;
 
 class Bankid_6_0_dev
 {
-    private Client $guzzleClient;
+    private $guzzleClient;
     private const API_BASE_URL = 'https://appapi2.test.bankid.com/rp/v6.0/';
 
     public function __construct(array $guzzleOptions = [])
