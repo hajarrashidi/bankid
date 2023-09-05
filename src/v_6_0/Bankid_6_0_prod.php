@@ -6,6 +6,7 @@
 
 namespace BankID\v_6_0;
 
+use BankID\Models\ErrorResponse;
 use BankID\Models\Response;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
