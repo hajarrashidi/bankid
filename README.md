@@ -27,7 +27,6 @@ PHP Composer package for BankID, supports v6.0 with QR and App link support.
 - [x] /sign
 - [x] /phone/auth
 - [x] /phone/sign
-- [ ] Errors
 
 ## Helper methods:
 
