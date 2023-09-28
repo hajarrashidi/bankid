@@ -11,14 +11,13 @@ composer require hajarrashidi/bankid
 PHP Composer package for BankID, supports v6.0 with QR and App link support. 
 
 ## [Web service API:](https://www.bankid.com/utvecklare/guider/teknisk-integrationsguide/webbservice-api)
-Each version has a git branch
-- **v6.0 prod** 
-- **v6.0 dev**
+- **BankID v6.0 production** 
+- **BankID v6.0 development** 
 
 ## Requirements:
 
 * [Composer](https://getcomposer.org/)
-* PHP 7.2 or higher
+* PHP >= 7.2
 
 ## [Interface description:](https://www.bankid.com/utvecklare/guider/teknisk-integrationsguide/webbservice-api)
 
@@ -36,5 +35,29 @@ Each version has a git branch
 - [x] App-link generator 
 
 ---
+
+## Code example:
+```php
+<?php
+// If you don't have Composer autoload
+require_once __DIR__ . '/vendor/autoload.php';
+
+use BankID\v_6_0\Bankid_6_0_dev;
+
+$bankid = new Bankid_6_0_dev([
+    'verify' => false,
+    'headers' => [
+        'Content-Type' => 'application/json',
+    ],
+    'cert' => __DIR__ . '/bankid_test_cert.pem'
+]);
+
+$response = $bankid->auth([ 'endUserIp' => "127.0.0.1" ]);
+//$response = $bankid->sign([ 'endUserIp' => "127.0.0.1", 'userVisibleData' => base64_encode("hello") ]);
+//$response = $bankid->phoneSign([ 'personalNumber' => "111122334444", "userVisibleData" => base64_encode("hello"), "callInitiator" => "user"]);
+//$response = $bankid->phoneAuth([ 'personalNumber' => "111122334444", "callInitiator" => "user"]);
+
+var_dump($response);
+```
 financial support:
 https://patreon.com/hajarrashidi
