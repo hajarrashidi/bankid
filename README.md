@@ -25,12 +25,9 @@ Each version has a git branch
 - [x] /auth
 - [x] /collect
 - [x] /cancel
-
-**Not implemented yet:**
-
-- [ ] /sign
-- [ ] /phone/auth
-- [ ] /phone/sign
+- [x] /sign
+- [x] /phone/auth
+- [x] /phone/sign
 - [ ] Errors
 
 ## Helper methods:
