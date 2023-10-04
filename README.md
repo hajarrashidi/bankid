@@ -58,5 +58,9 @@ $response = $bankid->auth([ 'endUserIp' => "127.0.0.1" ]);
 
 var_dump($response);
 ```
-financial support:
-https://patreon.com/hajarrashidi
+
+### financial support:
+
+[Github Sponsor](https://github.com/sponsors/hajarrashidi)
+
+[Patreon](https://patreon.com/hajarrashidi)
